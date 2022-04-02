@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>loop</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://static.wixstatic.com/media/91df06_00c23b85655c4a439cfc48c1cfb97909~mv2.png"
+    />
+  </head>
+
+  <body>
+    <ul>
+      <li><a class="active" href="indx.html">Home</a></li>
+      <li><a href="sign-up.html">Sign-up</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#about">-</a></li>
+    </ul>
+    <button type="button" onclick="changeBG()">
+      Click me: to change background color
+    </button>
+    <hr />
+    <hr />
+
+    <script>
+      function changeBG() {
+        document.body.style.background = "red";
+      }
+    </script>
+  </body>
+</html>

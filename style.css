@@ -1,23 +1,67 @@
 body {
-    background-image: linear-gradient(to left, rgb(13, 13, 111),rgb(24, 110, 167), white);
-    
-    }
-
-h1 {
-    
+  background-image: linear-gradient(
+    to left,
+    rgb(13, 13, 111),
+    rgb(24, 110, 167),
+    white
+  );
 }
 
 p {
-    color:black;
-    font-size: 20px;  
+  color: black;
+  font-size: 20px;
 }
 
 img {
-    width: 500;
- 
-    height: 250;
+  width: 600;
+
+  height: 450;
 }
 
 iframe {
-    border-color: white;
+  border-color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(41, 48, 66);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(121, 207, 72);
+}
+
+.active {
+  background-color: #000000;
+}
+
+.myBox {
+  width: 200px;
+  height: 200px;
+  background-color: #67bcdd;
+  animation-name: animation;
+  animation-duration: 8s;
+}
+@keyframes animation {
+  from {
+    background-color: #67bcdd;
+  }
+  to {
+    background-color: #000000;
+  }
 }
