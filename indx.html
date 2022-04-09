@@ -11,16 +11,27 @@
 
   <body>
     <ul>
-      <li><a class="active" href="indx.html">Home</a></li>
+      <li><a href="indx.html">Home</a></li>
       <li><a href="sign-up.html">Sign-up</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="#about">-</a></li>
+      <li><a href="contact.html">contact</a></li>
+      <li id="colorPicker">
+        <a href="#color" id="changeColor"
+          ><input onchange="changeBG()" id="BGcolor" type="color"
+        /></a>
+      </li>
+      <li id="myfloat">
+        <a href="#profilePic"></a
+        ><img
+          id="profilePic"
+          src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+        />
+      </li>
     </ul>
-    <button type="button" onclick="changeBG()">
-      Click me: to change background color
-    </button>
+
     <hr />
     <hr />
+
     <center>
       <h1>Loop</h1>
       <img
@@ -29,66 +40,71 @@
     </center>
     <hr />
     <hr />
-    <p>
-      The straight-forward definition of Loop is a Hi-Tech academy. Its purpose
-      is to expose the next generations (called Loopers) to the world of
-      computer science and technology and offer them a personalized fun-based
-      educational method according to each student's preferences and ambitions
-      in a well-structured and modular customized approach. Also, since it is a
-      long-term program, Loop is built to guide the Loopers through the years.
-      The mentorship aspect of it promotes the idea of a lifelong and ongoing
-      system in which participants later may become mentors and contribute to
-      the community and even become Loop partners, thereby completing the loop
-      of knowledge.
-      <br />
-      <br />
-      However, what makes Loop so remarkable is something that goes beyond codes
-      and programming languages. It is Loop's Magic. Deciphering it means
-      understanding what Loop means to Loopers and the mentors, something that
-      transcends its initial aspirations. On an individual level, Loop — with
-      its personalized methods — is continuously encouraging creativity and
-      engaging participants to define their sense of self in their formative
-      years. They feel seen, heard, and relevant, and that generates both an
-      emotional and intellectual response that helps shape them as human beings.
-    </p>
+    <center>
+      <h1 style="color: black">
+        Preparing the next generation to the unknown future
+      </h1>
+    </center>
+    <br />
+    <br />
     <center>
       <iframe
-        width="600"
-        height="300"
-        src="https://www.youtube.com/embed/zIiMaMFOUJ0?autoplay=1&mute=1"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/sJFaIlVa6dk"
         title="YouTube video player"
-        frameborder="10"
+        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
-      >
-      </iframe>
+      ></iframe>
     </center>
-    <p>
-      Not only that, but Loop also acts as a youth tech movement that encourages
-      children to forge friendships with people their age and shared interests
-      in this community. That feeling of belonging is vital for individuals
-      going through a sensitive and eventful part of their lives. Learning about
-      teamwork is a great asset to them, personally and, in the future,
-      professionally.
-      <br />
-      <br />
-      The mentors display an active role that is not restricted to the
-      classrooms. They are considered role models (that is one of the reasons
-      Loop has strict rules of conduct, such as no cursing, no discussing
-      religion, politics, amongst others), but, more than that, they can become
-      a representation of the future of the Loop. As mentors, partners, or even
-      future investors. Mentors are an instrumental part of Loop, and the idea
-      of becoming a mentor in the future may be very inspiring for some younger
-      Loopers. When you are part of a growing, healthy community, you want to
-      grow with it. Becoming a mentor can seem like a rite of passage, as well
-      as a contributing part of Loop's system, which has already given you so
-      much. The possibility of influencing others positively is exciting and
-      uplifting.
-    </p>
+    <br />
+    <br />
+
+    <div>
+      <u>
+        <h1 id="Loop_informations">Loop, sayed:</h1>
+      </u>
+      <u> <h3>Who Loop Look For:</h3></u>
+      <p>
+        "We are continuously looking to hire exceptional change-makers to join
+        our social impact movement; the believers, the leaders, the ones who
+        don't accept the status quo, and are excited about building a better
+        future for the next generations of entrepreneurs, creators, and makers.
+        Before considering sending us an application, please make sure to read
+        the full article about the 'Loop Magic'".
+      </p>
+    </div>
+    <div>
+      <u><h3>Lifelong learning:</h3> </u>
+      <p>
+        Unlike the traditional methods of having standard courses, we chose a
+        different approach when it comes to investing in our talents; we do
+        provide a semestrial programs in which we promote lifelong learning
+        rather than a one-time course. Thus, it is a long journey.
+      </p>
+    </div>
+    <div>
+      <u> <h3>We are Going to:</h3> </u>
+      <p>
+        1. We are going to awaken the dreamer within every Looper. <br />
+        2. We are going to awaken the coder in every Looper. <br />
+        3. We are going to awaken the thinker within every Looper. <br />
+        4. We are going to awaken the storyteller in every Looper. <br />
+        5. We are going to awaken the leader within every Looper. <br />
+      </p>
+    </div>
+
+    <footer>
+      <p>Loop Is The Best Place, Go and Visit it !</p>
+      <h5>Phone: 04-677-6977</h5>
+      <h5>Address: 4008 St, Nazareth</h5>
+    </footer>
 
     <script>
       function changeBG() {
-        document.body.style.background = "red";
+        var newcolor = document.getElementById("BGcolor").value;
+        document.body.style.background = newcolor;
       }
     </script>
   </body>

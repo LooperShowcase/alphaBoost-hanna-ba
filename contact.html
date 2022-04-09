@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Loop</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://static.wixstatic.com/media/91df06_00c23b85655c4a439cfc48c1cfb97909~mv2.png"
+    />
+  </head>
+
+  <body>
+    <ul>
+      <li><a href="indx.html">Home</a></li>
+      <li><a href="sign-up.html">Sign-up</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">contact</a></li>
+      <li id="colorPicker">
+        <a href="#color" id="changeColor"
+          ><input onchange="changeBG()" id="BGcolor" type="color"
+        /></a>
+      </li>
+      <li id="myfloat">
+        <a href="#profilePic"></a
+        ><img
+          id="profilePic"
+          src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+        />
+      </li>
+    </ul>
+
+    <hr />
+    <hr />
+    <center>
+      <h1 id="contact_us">to contact us:</h1>
+      <p id="contact_us_2">
+        The Eamil: <br />
+        hanna.bathish@gmail.com
+      </p>
+
+      <p id="contact_us_3">
+        The Phone_Number: <br />
+        0505736dhfhs
+      </p>
+
+      <img
+        id="Eamil_apple"
+        src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Mail-512.png"
+      />
+    </center>
+
+    <hr />
+    <hr />
+
+    <script>
+      function changeBG() {
+        var newcolor = document.getElementById("BGcolor").value;
+        document.body.style.background = newcolor;
+      }
+    </script>
+  </body>
+</html>

@@ -14,32 +14,73 @@
       <li><a class="active" href="indx.html">Home</a></li>
       <li><a href="sign-up.html">Sign-up</a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="#about">-</a></li>
+      <li><a href="contact.html">contact</a></li>
+      <li id="myfloat">
+        <a href="#color" id="changeColor"
+          ><input onchange="changeBG()" id="BGcolor" type="color"
+        /></a>
+      </li>
+      <li id="myfloat">
+        ><img
+          id="profilePic"
+          src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+        />
+      </li>
     </ul>
-    <button type="button" onclick="changeBG()">
-      Click me: to change background color
-    </button>
+
     <hr />
     <hr />
-    <div id="myBox">
-      <form>
-        <label for="fname">First Name:</label><br />
-        <input type="text" /><br />
 
-        <label for="lname">Last Name:</label><br />
-        <input type="text" /><br />
-        <br />
-        <br />
-        <label for="fname">Eamil:</label><br />
-        <input type="eamil" />
+    <center>
+      <img
+        src="https://static.wixstatic.com/media/91df06_f532efbd6b9a4a6f923590534ae9e699~mv2_d_5906_4724_s_4_2.jpg/v1/fill/w_717,h_572,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/text.jpg"
+        alt="text.jpg"
+        style="
+          width: 700px;
+          height: 500px;
+          object-fit: cover;
+          object-position: 50% 50%;
+        "
+      />
+    </center>
+    <hr />
+    <hr />
+    <center>
+      <div id="myBox">
+        <form>
+          <label for="fname">First Name:</label><br />
+          <input type="text" /><br />
 
-        <label for="fname">Pasword:</label>
-        <input type="pasword" />
-      </form>
-    </div>
+          <label for="lname">Last Name:</label><br />
+          <input type="text" /><br />
+          <br />
+          <br />
+          <label for="fname">Eamil:</label>
+          <input type="eamil" />
+
+          <label for="fname">Pasword:</label>
+          <input type="pasword" /><br />
+          <br />
+
+          <button>send</button>
+
+          <br />
+          <br />
+
+          <input id="mypic" type="file" onchange="changePic()" />
+        </form>
+      </div>
+    </center>
+
     <script>
       function changeBG() {
-        document.body.style.background = "red";
+        var newcolor = document.getElementById("BGcolor").value;
+        document.body.style.background = newcolor;
+      }
+
+      function changePic() {
+        var newpic = document.getElementById("mypic").files[0].name;
+        document.getElementById("profilePic").src = newpic;
       }
     </script>
   </body>
